@@ -143,7 +143,8 @@ section h2 {
 /* % OTHER DOWNLOADS SECTION */
 
 .other-downloads {
-    background-color: var(--ice);
+    background-image: url('../assets/textures/oak_planks.png');
+	color: white;
 }
 
 .other-downloads__item {
@@ -155,36 +156,35 @@ section h2 {
 }
 
 .other-downloads__item a {
-    color: var(--blue-ice);
     font-weight: bold;
 }
 
 /* % FEATURES SECTION */
 
-.features {
-	background-color: var(--oak);
-	background-image: url('../assets/textures/oak_planks.png');
-	background-size: auto 4%;
+.features__title,
+.features__subtitle {
+	color: var(--grass);
 }
 
-.features__title {
-	color: white;
+.features__subtitle {
+	margin-block: 1.5rem .5rem;
 }
 
-.features li {
-	color: hsl(0, 0%, 94%);
-	margin-bottom: 1rem;
+.features p {
+	margin-block: 1rem;
+}
 
-	strong {
-		color: var(--gold);
-	}
-
-	strong::after {
-		content: ':';
-	}
+.image-container {
+	display: flex;
+	gap: 1rem;
+	width: var(--page-width);
 }
 
 /* % EDITIONS SECTION */
+
+.editions {
+	background-color: var(--ice);
+}
 
 .editions-title {
 	color: var(--blue-ice);
@@ -192,6 +192,10 @@ section h2 {
 
 .editions-comparison {
 	width: 100%;
+}
+
+.editions-comparison tr:has(td) {
+	background-color: white;
 }
 
 .editions-comparison tr:nth-child(even) {
@@ -229,7 +233,7 @@ section h2 {
 
 .editions-comparison tr:first-child th:first-child {
 	border: none;
-	background: none;
+	background: transparent;
 }
 
 .editions-comparison .fa-solid {
@@ -241,7 +245,7 @@ section h2 {
 
 footer {
 	background-image: url('../assets/textures/deepslate.png');
-    background-size: 64px;
+    background-size: 128px;
 	color: white;
 	padding: 2rem;
 }
