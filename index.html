@@ -2,14 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Renan Santos" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optifine</title>
     <meta name="description" content="OptiFine - Minecraft performance tuning and advanced graphics" />
     <meta name="keywords" content="optifine, minecraft, fps, lag, antialiasing, hd textures, shaders" />
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="assets/optifine.webp">
+    <link rel="icon" href="assets/optifine-logo.svg">
     <script src="scripts/main.js" defer type="module"></script>
     <script src="https://kit.fontawesome.com/40a462bca1.js" crossorigin="anonymous"></script>
 </head>
@@ -27,6 +26,7 @@
         <section class="hero">
             <div class="hero__text">
                 <div class="hero__title">
+                    <img src="./assets/images/optifine-logo.svg"  alt=""/>
                     <h1>Optifine</h1>
                 </div>
                 <p class="hero__text__text">Your Minecraft</p>
@@ -101,39 +101,50 @@
         <section class="features">
             <div class="limited-width">
                 <h2 class="features__title">Features</h2>
-                <div class="features__item">
-                    <h3 class="features__subtitle">FPS Boost</h3>
-                    <img src="https://i.imgur.com/HOjDG.png" alt="" >
-                    <p>Doubling the FPS is common - decreases lag spikes and smooths gameplay</p>
-                </div>
-                
-                
-                <div class="features__item">
-                    <h3 class="features__subtitle">Support for HD Textures</h3>
-                    <p>HD textures and HD fonts (MCPatcher not needed) - custom terrain and item textures - animated terrain and item textures - custom HD Font character widths - custom colors - custom block color palettes - custom lighting - unlimited texture size</p>
-                </div>
-                
-                <div class="features__item">
-                    <h3 class="features__subtitle">Support for Shaders</h3>
-                    <p>Based on the Shaders Mod by Karyonix</p>
-                </div>
-                
-                <div class="features__item">
-                    <h3 class="features__subtitle">Dynamic Lights</h3>
-                    <p>Allows handheld and dropped light emitting items to illuminate the objects around them. It is similar, but not related to the Dynamic Lights <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272478-dynamic-lights" target="_blank" rel="noopener">mod</a></p>
-                </div>
-                
-                <div class="features__item">
-                    <h3 class="features__subtitle">Connected Textures</h3>
-                    <div class="image-container">
-                        <img src="./assets/images/connected-textures.png" alt="">
-                        <img src="./assets/images/connected-textures2.png" alt="">
+                <div class="bento-grid">
+                    <div class="bento-grid__item">
+                        <div class="features__item">
+                            <h3 class="features__subtitle">FPS Boost</h3>
+                            <img src="https://i.imgur.com/HOjDG.png" alt="" >
+                            <p>Doubling the FPS is common - decreases lag spikes and smooths gameplay</p>
+                        </div>
                     </div>
-                    <p>Connects textures for glass, glass panes, sandstone and bookshelf blocks which are next to each other.</p>
-                </div>
-                
-                <div class="features__item">
-                    <h3 class="features__subtitle"><a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1272953-optifine-hd-fps-boost-dynamic-lights-shaders-and" target="_blank" rel="noopener">Learn more</a></h3>
+                    
+                    <div class="bento-grid__item">
+                        <div class="features__item">
+                            <h3 class="features__subtitle">Support for HD Textures</h3>
+                            <p>HD textures and HD fonts (MCPatcher not needed) - custom terrain and item textures - animated terrain and item textures - custom HD Font character widths - custom colors - custom block color palettes - custom lighting - unlimited texture size</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bento-grid__item">
+                        <div class="features__item">
+                            <h3 class="features__subtitle">Support for Shaders</h3>
+                            <p>Based on the Shaders Mod by Karyonix</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bento-grid__item" id="connected-textures">
+                        <div class="features__item">
+                            <h3 class="features__subtitle">Connected Textures</h3>
+                            <div class="image-container">
+                                <img src="./assets/images/connected-textures.png" alt="">
+                                <img src="./assets/images/connected-textures2.png" alt="">
+                            </div>
+                            <p>Connects textures for glass, glass panes, sandstone and bookshelf blocks which are next to each other.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bento-grid__item">
+                        <div class="features__item" id="dynamic-lights">
+                            <h3 class="features__subtitle">Dynamic Lights</h3>
+                            <p>Allows handheld and dropped light emitting items to illuminate the objects around them. It is similar, but not related to the  <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272478-dynamic-lights" target="_blank" rel="noopener">Dynamic Lights mod</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="features__item bento-grid__item">
+                        <h3 class="features__subtitle"><a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1272953-optifine-hd-fps-boost-dynamic-lights-shaders-and" target="_blank" rel="noopener">Learn more...</a></h3>
+                    </div>
                 </div>
             </div>
         </section>

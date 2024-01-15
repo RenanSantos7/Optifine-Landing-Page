@@ -4,6 +4,8 @@
     --stone2: hsl(0, 0%, 45%);
     --inventory: hsl(0, 0%, 78%);
     --inventory2: hsl(0, 0%, 55%);
+    --inventory-out: hsl(0, 0%, 62%);
+    --inventory-out2: hsl(0, 0%, 84%);
     --terracota: hsl(19, 38%, 44%);
     --spruce-log: hsl(32, 41%, 37%);
     --oak: hsl(37, 44%, 57%);
@@ -18,5 +20,5 @@
 
     /* Sizes */
     --header-height: 3rem;
-    --page-width: 900px;
+    --page-width: 1000px;
 }
