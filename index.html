@@ -8,17 +8,25 @@
     <meta name="description" content="OptiFine - Minecraft performance tuning and advanced graphics" />
     <meta name="keywords" content="optifine, minecraft, fps, lag, antialiasing, hd textures, shaders" />
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="assets/optifine-logo.svg">
+    <link rel="icon" href="assets/images/optifine-logo.svg">
     <script src="scripts/main.js" defer type="module"></script>
     <script src="https://kit.fontawesome.com/40a462bca1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="flex-center">
-        <nav>
-            <menu class="superior-menu flex-center">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+        <nav class="superior-menu">
+            <menu class="flex-center">
+                <li><a href="#other-downloads">Downloads</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#editions">Editions</a></li>
+            </menu>
+
+            <menu class="flex-center">
+                <li><a href="https://optifine.net/donate" target="_blank" rel="noopener">Donate</a></li>
+                <li><a href="https://optifine.net/cape" target="_blank" rel="noopener">Cape</a></li>
+                <li><a href="https://optifine.net/banners" target="_blank" rel="noopener">Banners</a></li>
+                <li><a href="https://optifine.net/faq" target="_blank" rel="noopener">FAQ</a></li>
+                <li id="login"><a href="https://optifine.net/login" target="_blank" rel="noopener">Login</a></li>
             </menu>
         </nav>
     </header>
@@ -26,7 +34,7 @@
         <section class="hero">
             <div class="hero__text">
                 <div class="hero__title">
-                    <img src="./assets/images/optifine-logo.svg"  alt=""/>
+                    <img src="assets/images/optifine-logo.svg" alt="OptiFine logo" />
                     <h1>Optifine</h1>
                 </div>
                 <p class="hero__text__text">Your Minecraft</p>
@@ -47,83 +55,95 @@
                     <h2>OptiFine is a Minecraft optimization mod</h2>
 
                     <p>It allows Minecraft to run faster and look better with full support for HD textures, shaders, connected textures, and many configuration options!</p>
+
+                    <p>The official OptiFine description is on the <a href="http://www.minecraftforum.net/topic/249637-" target="_blank" rel="noopener">Minecraft Forums</a>.</p>
                 </div>
                 <img src="./assets/images/steve_forward.png" alt="'Minecraft character with a pickaxe" />
             </div>
         </section>
 
-        <section class="other-downloads">
+        <section class="other-downloads" id="other-downloads">
             <div class="limited-width">
                 <h2>Download Another Versions</h2>
-                <div class="other-downloads__item">
-                    <h3>Minecraft 1.20.4</h3>
-                    <details>
-                        <summary>Preview versions</summary>
-                        <ul>
-                            <li>
-                                <a href="http://adfoc.us/serve/sitelinks/?id=475250&url=http://optifine.net/adloadx?f=preview_OptiFine_1.20.4_HD_U_I7_pre2.jar&x=1424" target="_blank" rel="noopener">OptiFine HD U I7 pre2</a>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-                
-                <div class="other-downloads__item">
-                    <h3>Minecraft 1.20.2</h3>
-                    <details>
-                        <summary>Preview versions</summary>
-                        <ul>
-                            <li>
-                                <a href="http://adfoc.us/serve/sitelinks/?id=475250&url=http://optifine.net/adloadx?f=preview_OptiFine_1.20.2_HD_U_I7_pre1.jar&x=1424" target="_blank" rel="noopener">OptiFine HD U I7 pre1</a>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-                
-                <div class="other-downloads__item">
-                    <h3>Minecraft 1.20.1</h3>
-                    <details>
-                        <summary>Preview versions</summary>
-                        <ul>
-                            <li>
-                                <a href="http://adfoc.us/serve/sitelinks/?id=475250&url=http://optifine.net/adloadx?f=OptiFine_1.20.1_HD_U_I5.jar&x=14244" target="_blank" rel="noopener">OptiFine HD U I5 pre1</a>
-                            </li>
-                        </ul>
-                    </details>
-                </div class="other-downloads__item">
+                <div class="other-downloads__wrapper">
+                    <img src="./assets//images/pig_forward.png" alt="A minecraft pig looking to right" />
+                    <div>
+                        <div class="other-downloads__item">
+                            <h3>Minecraft 1.20.4</h3>
+                            <details>
+                                <summary>Preview versions</summary>
+                                <ul>
+                                    <li>
+                                        <a href="http://adfoc.us/serve/sitelinks/?id=475250&url=http://optifine.net/adloadx?f=preview_OptiFine_1.20.4_HD_U_I7_pre2.jar&x=1424"
+                                            target="_blank" rel="noopener">OptiFine HD U I7 pre2</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
 
-                <div class="other-downloads__item">
-                    <a href="https://optifine.net/downloads">Older versions</a>
+                        <div class="other-downloads__item">
+                            <h3>Minecraft 1.20.2</h3>
+                            <details>
+                                <summary>Preview versions</summary>
+                                <ul>
+                                    <li>
+                                        <a href="http://adfoc.us/serve/sitelinks/?id=475250&url=http://optifine.net/adloadx?f=preview_OptiFine_1.20.2_HD_U_I7_pre1.jar&x=1424"
+                                            target="_blank" rel="noopener">OptiFine HD U I7 pre1</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+
+                        <div class="other-downloads__item">
+                            <h3>Minecraft 1.20.1</h3>
+                            <details>
+                                <summary>Preview versions</summary>
+                                <ul>
+                                    <li>
+                                        <a href="http://adfoc.us/serve/sitelinks/?id=475250&url=http://optifine.net/adloadx?f=OptiFine_1.20.1_HD_U_I5.jar&x=14244"
+                                            target="_blank" rel="noopener">OptiFine HD U I5 pre1</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div class="other-downloads__item">
+
+                        <div class="other-downloads__item">
+                            <a href="https://optifine.net/downloads">Older versions</a>
+                        </div>
+                    </div>
                 </div>
-               
+
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="features">
             <div class="limited-width">
                 <h2 class="features__title">Features</h2>
                 <div class="bento-grid">
                     <div class="bento-grid__item">
                         <div class="features__item">
                             <h3 class="features__subtitle">FPS Boost</h3>
-                            <img src="https://i.imgur.com/HOjDG.png" alt="" >
+                            <img src="https://i.imgur.com/HOjDG.png" alt="">
                             <p>Doubling the FPS is common - decreases lag spikes and smooths gameplay</p>
                         </div>
                     </div>
-                    
+
                     <div class="bento-grid__item">
                         <div class="features__item">
                             <h3 class="features__subtitle">Support for HD Textures</h3>
-                            <p>HD textures and HD fonts (MCPatcher not needed) - custom terrain and item textures - animated terrain and item textures - custom HD Font character widths - custom colors - custom block color palettes - custom lighting - unlimited texture size</p>
+                            <p>HD textures and HD fonts (MCPatcher not needed) - custom terrain and item textures -
+                                animated terrain and item textures - custom HD Font character widths - custom colors -
+                                custom block color palettes - custom lighting - unlimited texture size</p>
                         </div>
                     </div>
-                    
+
                     <div class="bento-grid__item">
                         <div class="features__item">
                             <h3 class="features__subtitle">Support for Shaders</h3>
                             <p>Based on the Shaders Mod by Karyonix</p>
                         </div>
                     </div>
-                    
+
                     <div class="bento-grid__item" id="connected-textures">
                         <div class="features__item">
                             <h3 class="features__subtitle">Connected Textures</h3>
@@ -131,17 +151,18 @@
                                 <img src="./assets/images/connected-textures.png" alt="">
                                 <img src="./assets/images/connected-textures2.png" alt="">
                             </div>
-                            <p>Connects textures for glass, glass panes, sandstone and bookshelf blocks which are next to each other.</p>
+                            <p>Connects textures for glass, glass panes, sandstone and bookshelf blocks which are next
+                                to each other.</p>
                         </div>
                     </div>
-                    
+
                     <div class="bento-grid__item">
                         <div class="features__item" id="dynamic-lights">
                             <h3 class="features__subtitle">Dynamic Lights</h3>
-                            <p>Allows handheld and dropped light emitting items to illuminate the objects around them. It is similar, but not related to the  <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272478-dynamic-lights" target="_blank" rel="noopener">Dynamic Lights mod</a></p>
+                            <p>Allows handheld and dropped light emitting items to illuminate the objects around them. It is similar, but not related to the <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272478-dynamic-lights" target="_blank" rel="noopener">Dynamic Lights mod</a></p>
                         </div>
                     </div>
-                    
+
                     <div class="features__item bento-grid__item">
                         <h3 class="features__subtitle"><a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1272953-optifine-hd-fps-boost-dynamic-lights-shaders-and" target="_blank" rel="noopener">Learn more...</a></h3>
                     </div>
@@ -149,7 +170,7 @@
             </div>
         </section>
 
-        <section class="editions">
+        <section class="editions" id="editions">
             <div class="limited-width">
                 <h2 class="editions-title">Editions</h2>
                 <table class="editions-comparison">
@@ -259,17 +280,24 @@
         </section>
 
         <footer id="footer">
-          <div class="limited-width footer-container">
-                <div class="of-copyright">
-                    <p>The mod OptiFine is Copyright © 2013 by sp614x the intellectual property of the author.</p>
-                    <p>It may be not be reproduced under any circumstances except for personal, private use as long as it remains in its unaltered, unedited form. It may not be placed on any website or otherwise distributed publicly without advance written permission.</p><p>Use of this mod on any other website or as a part of any public display is strictly prohibited and a violation of copyright.</p>
+            <div class="limited-width">
+                <div class="footer__of-logo">
+                    <img src="assets/images/optifine-logo.svg" alt="OptiFine logo" class="footer__of-logo__img" />
+                    <div class="footer__of-logo__name">Optifine</div>
                 </div>
+                <div class="footer-container">
+                    <div class="of-copyright">
+                        <p>The mod OptiFine is Copyright © 2013 by sp614x the intellectual property of the author.</p>
+                        <p>It may be not be reproduced under any circumstances except for personal, private use as long as it remains in its unaltered, unedited form. It may not be placed on any website or otherwise distributed publicly without advance written permission.</p>
+                        <p>Use of this mod on any other website or as a part of any public display is strictly prohibited and a violation of copyright.</p>
+                    </div>
     
-                <div class="page-copyright">
-                    This page was developed by <a href="https://renansantos7.github.io" target="_blank" rel="noopener">Renan Santos</a> for
-                    sp614x.
+                    <div class="page-copyright">
+                        This page was developed by <a href="https://renansantos7.github.io" target="_blank"
+                            rel="noopener">Renan Santos</a>.
+                    </div>
                 </div>
-          </div>
+            </div>
         </footer>
     </body>
 </body>

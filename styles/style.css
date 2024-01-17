@@ -19,6 +19,26 @@ h1, h2, h3 {
 	font-family: 'Minecraft';
 }
 
+section {
+	padding-block: 5rem;
+}
+
+section h2 {
+	font-weight: normal;
+	font-size: 3rem;
+}
+
+.limited-width {
+	width: min(90%, var(--page-width));
+	margin-inline: auto;
+}
+
+#login:hover {
+	background-color: var(--grass2);
+}
+
+/* % HEADER */
+
 header {
 	background-color: var(--grass);
 	height: var(--header-height);
@@ -32,21 +52,15 @@ header {
 }
 
 .superior-menu {
-	gap: 1.5em;
-}
-
-section {
-	padding-block: 5rem;
-}
-
-section h2 {
-	font-weight: normal;
-	font-size: 3rem;
-}
-
-.limited-width {
+	display: flex;
+	justify-content: space-between;
 	width: min(90%, var(--page-width));
-	margin-inline: auto;
+	padding-inline: auto;
+}
+
+.superior-menu menu {
+	display: flex;
+	gap: 1.5rem
 }
 
 /* % HERO SECTION */
@@ -77,25 +91,6 @@ section h2 {
 	text-align: center;
 	text-shadow: 0 0 15px rgba(0, 10, 0, 0.5), 0 0 10px rgba(0, 10, 0, 1);
 }
-
-/*.hero__title {
-    perspective: 100px;
-}
-
- .hero__title h1 {
-	font-family: 'Minecraft';
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 6em;
-    text-shadow: none;
-    -webkit-text-stroke: 2px var(--gold-frame);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249,232,51,1) 0%, rgba(250,196,59,1) 100.2% );
-    background-clip: text;
-	color: transparent;
-    transform: rotateX(8deg);
-    position: relative;
-    z-index: 2;
-}  */
 
 .hero__title {
 	display: flex;
@@ -154,11 +149,32 @@ section h2 {
 	margin-bottom: 1rem;
 }
 
+.infos p {
+	margin-bottom: 1rem;
+}
+
 /* % OTHER DOWNLOADS SECTION */
 
-.other-downloads {
+.other-downloads__wrapper {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1rem;
+}
+
+.other-downloads__wrapper img {
+	width: min(50%, 350px);
+}
+
+.other-downloads h2 {
 	background-image: url('../assets/textures/oak_planks.png');
-	color: white;
+	background-clip: text;
+	color: transparent;
+}
+
+.other-downloads h3 {
+	font-size: 1.4em;
+	font-weight: normal;
 }
 
 .other-downloads__item {
@@ -220,9 +236,9 @@ section h2 {
 
 /* % EDITIONS SECTION */
 
-.editions {
+/* .editions {
 	background-color: var(--ice);
-}
+} */
 
 .editions-title {
 	color: var(--blue-ice);
@@ -286,12 +302,27 @@ footer {
 	background-size: 128px;
 	color: white;
 	padding: 2rem;
+	margin-top: 7rem;
+}
+
+.footer__of-logo{
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.footer__of-logo__img {
+	width: 2rem;
+}
+
+.footer__of-logo__name {
+	font-family: 'Minecraft', sans;
+	font-size: 1.5rem;
 }
 
 .footer-container {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 1rem;
 	font-size: 0.8rem;
 }
