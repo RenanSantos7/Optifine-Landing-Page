@@ -363,12 +363,19 @@ footer {
 	font-size: 1.5rem;
 }
 
-.footer-container {
+.footer__links__social-media,
+.footer__links__other-links {
+	display: flex;
+	margin-bottom: 1rem;
+	gap: 1rem;
+}
+
+.footer__copyright {
 	display: flex;
 	gap: 1rem;
 }
 
-.footer-container p {
+.footer__copyright p {
 	font-size: 0.8rem;
 	margin-bottom: 0.5rem;
 }
