@@ -1,0 +1,40 @@
+footer {
+	background-image: url('../assets/textures/deepslate.png');
+	background-size: 128px;
+	color: white;
+	padding: 2rem;
+	margin-top: 7rem;
+}
+
+.footer__of-logo{
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.footer__of-logo__img {
+	width: 2rem;
+}
+
+.footer__of-logo__name {
+	font-family: 'Minecraft', sans;
+	font-size: 1.5rem;
+}
+
+.footer__links__social-media,
+.footer__links__other-links {
+	display: flex;
+	margin-bottom: 1rem;
+	gap: 1rem;
+}
+
+.footer__copyright {
+	display: flex;
+	gap: 1rem;
+}
+
+.footer__copyright p {
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+}

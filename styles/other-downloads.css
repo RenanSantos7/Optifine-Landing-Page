@@ -1,0 +1,68 @@
+.other-downloads__wrapper {
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.other-downloads__wrapper img {
+	width: min(50%, 350px);
+}
+
+.other-downloads__wrapper__wrapper {
+	flex-grow: 1;
+}
+
+.other-downloads h2 {
+	background-image: url('../assets/textures/oak_planks.png');
+	background-clip: text;
+	color: transparent;
+}
+
+.other-downloads h3 {
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+.other-downloads__item {
+	padding-left: .5rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+
+.other-downloads__item__details {
+	transition: height 6s ease-in-out;
+	width: 100%;
+}
+
+.other-downloads__item__details.hidden {
+	height: 1.5rem;
+}
+
+.other-downloads__item__summary {
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.other-downloads__item__table {
+	width: 100%;
+	margin-top: .5rem;
+}
+
+.other-downloads__item__table td {
+	text-align: center;
+	padding-block: .25rem;
+}
+
+.other-downloads__item ul {
+	margin-left: 2rem;
+}
+
+.other-downloads__item a {
+	color: var(--oak);
+	font-weight: 600;
+}
+
+.other-downloads__item__table a {
+	font-weight: normal;
+}

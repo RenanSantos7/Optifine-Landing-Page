@@ -1,0 +1,23 @@
+header {
+	background-color: var(--grass);
+	height: var(--header-height);
+	color: hsl(0, 0%, 100%);
+	box-shadow: 0 0 5px rgba(0, 10, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.superior-menu {
+	display: flex;
+	justify-content: space-between;
+	width: min(90%, var(--page-width));
+	padding-inline: auto;
+}
+
+.superior-menu menu {
+	display: flex;
+	gap: 1.5rem
+}

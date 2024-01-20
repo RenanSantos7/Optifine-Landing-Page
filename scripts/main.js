@@ -15,8 +15,8 @@ const now = new Date()
 
 if (now.getHours < 12) {
     elementHero.style.backgroundImage = 'url("../assets/images/bg/swamp-river.jpg")'
-} else if (12 <= now.getHours() < 18) {
+} else if (12 <= now.getHours() && now.getHours() < 18) {
     elementHero.style.backgroundImage = 'url("../assets/images/bg/sunset.jpg")'
 } else {
-    elementHero.style.backgroundImage = 'url("../assets/images/bg/sunshine-swamp.jpg")'
+    elementHero.style.backgroundImage = 'url("../assets/images/bg/night-moon.png")'
 }

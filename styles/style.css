@@ -1,7 +1,37 @@
 @import url('https://renansantos7.github.io/styles/reset.css');
-@import url('bento.css');
-@import url('variables.css');
 @import url('fonts.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('infos.css');
+@import url('other-downloads.css');
+@import url('features.css');
+@import url('editions.css');
+@import url('footer.css');
+
+:root {
+    /* Colors */
+    --stone: hsl(300, 1%, 61%);
+    --stone2: hsl(0, 0%, 45%);
+    --inventory: hsl(0, 0%, 78%);
+    --inventory2: hsl(0, 0%, 55%);
+    --inventory-out: hsl(0, 0%, 62%);
+    --inventory-out2: hsl(0, 0%, 84%);
+    --terracota: hsl(19, 38%, 44%);
+    --spruce-log: hsl(32, 41%, 37%);
+    --oak: hsl(37, 44%, 57%);
+    --gold: hsl(54, 100%, 65%);
+    --gold2: hsl(50, 99%, 64%);
+    --gold3: hsl(48, 100%, 62%);
+    --gold-frame:hsl(37, 65%, 52%);
+    --grass: hsl(96, 56%, 37%);
+    --grass2: hsl(90, 50%, 25%);
+    --ice: hsla(218, 94%, 74%, 0.5);
+    --blue-ice: hsl(219, 95%, 70%);
+
+    /* Sizes */
+    --header-height: 3rem;
+    --page-width: 1000px;
+}
 
 /* % GENERIC RULES */
 
@@ -35,347 +65,4 @@ section h2 {
 .limited-width {
 	width: min(90%, var(--page-width));
 	margin-inline: auto;
-}
-
-#login:hover {
-	background-color: var(--grass2);
-}
-
-/* % HEADER */
-
-header {
-	background-color: var(--grass);
-	height: var(--header-height);
-	color: hsl(0, 0%, 100%);
-	box-shadow: 0 0 5px rgba(0, 10, 0, 0.5);
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 999;
-}
-
-.superior-menu {
-	display: flex;
-	justify-content: space-between;
-	width: min(90%, var(--page-width));
-	padding-inline: auto;
-}
-
-.superior-menu menu {
-	display: flex;
-	gap: 1.5rem
-}
-
-/* % HERO SECTION */
-
-.hero {
-	margin-top: var(--header-height);
-	height: calc(100vh - var(--header-height));
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 5rem;
-	padding: 0;
-	line-height: 1;
-
-	/* Background */
-	background-image: url('../assets/images/2019-07-25_19.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.hero__text {
-	display: flex;
-	flex-direction: column;
-	color: hsl(0, 0%, 85%);
-	font-size: 1.4rem;
-	text-align: center;
-	text-shadow: 0 0 15px rgba(0, 10, 0, 0.5), 0 0 10px rgba(0, 10, 0, 1);
-}
-
-.hero__title {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-}
-
-.hero__title h1 {
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 6rem;
-}
-
-.hero__text__text {
-	margin-block: 1.5rem;
-}
-
-.hero__text__spotlight {
-	font-size: 2rem;
-	text-transform: uppercase;
-}
-
-.hero__cta__download-btn {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	align-items: center;
-	padding: 1rem;
-	background-color: var(--grass);
-	border-right: 5px solid var(--grass2);
-	border-bottom: 5px solid var(--grass2);
-
-	font-family: 'Minecraft';
-	color: white;
-}
-
-.hero__cta__download-btn:active {
-	background-color: var(--grass2);
-	border: none;
-}
-
-/* % INFOS SECTION */
-
-.infos__wrapper {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-}
-
-.infos__wrapper img {
-	width: min(50%, 350px);
-}
-
-.infos__wrapper h2 {
-	color: var(--spruce-log);
-	margin-bottom: 1rem;
-}
-
-.infos p {
-	margin-bottom: 1rem;
-}
-
-/* % OTHER DOWNLOADS SECTION */
-
-.other-downloads__wrapper {
-	display: flex;
-	justify-content: start;
-	align-items: flex-start;
-	gap: 1rem;
-}
-
-.other-downloads__wrapper img {
-	width: min(50%, 350px);
-}
-
-.other-downloads__wrapper__wrapper {
-	flex-grow: 1;
-}
-
-.other-downloads h2 {
-	background-image: url('../assets/textures/oak_planks.png');
-	background-clip: text;
-	color: transparent;
-}
-
-.other-downloads h3 {
-	font-size: 1.4em;
-	font-weight: normal;
-}
-
-.other-downloads__item {
-	padding-left: .5rem;
-	margin-bottom: 1rem;
-	overflow: hidden;
-}
-
-.other-downloads__item__details {
-	transition: height 6s ease-in-out;
-	width: 100%;
-}
-
-.other-downloads__item__details.hidden {
-	height: 1.5rem;
-}
-
-.other-downloads__item__summary {
-	font-size: 1.1rem;
-	cursor: pointer;
-}
-
-.other-downloads__item__table {
-	width: 100%;
-	border: 1px solid var(--oak);
-	margin-top: .5rem;
-	background-image: url('../assets/textures/oak_planks.png');
-	color: white
-}
-
-.other-downloads__item__table td {
-	text-align: center;
-	padding-block: .25rem;
-}
-
-.other-downloads__item ul {
-	margin-left: 2rem;
-}
-
-.other-downloads__item a {
-	color: var(--oak);
-	font-weight: bold;
-}
-
-.other-downloads__item__table a {
-	color: wheat;
-	font-weight: normal;
-}
-
-/* % FEATURES SECTION */
-
-.features {
-	background-color: var(--inventory);
-}
-
-.features__item {
-	background-color: var(--inventory2);
-	border: 2px solid black;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
-	padding: 1rem;
-	height: 100%
-}
-
-.features__title {
-	color: var(--grass);
-}
-
-.features__subtitle {
-	margin-bottom: 0.5rem;
-	font-size: 1.2rem;
-}
-
-.features p {
-	margin-bottom: 1rem;
-	font-size: 1rem;
-}
-
-#dynamic-lights {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	color: white;
-	background-image: url('../assets/images/2024-01-18_17.39.16.png');
-	background-size: cover;
-	background-position: center;
-}
-
-.image-container {
-	display: flex;
-	gap: 1rem;
-	width: 600px;
-	overflow: hidden;
-	margin-bottom: 0.5rem
-}
-
-
-/* % EDITIONS SECTION */
-
-.editions-title {
-	color: var(--blue-ice);
-}
-
-.editions-comparison {
-	width: 100%;
-}
-
-.editions-comparison tr:has(td) {
-	background-color: white;
-}
-
-.editions-comparison tr:nth-child(even) {
-	background-color: #eee;
-}
-
-.editions-comparison td,
-.editions-comparison th {
-	border-block: 1px solid var(--inventory2);
-	padding: 0.5rem;
-}
-
-.editions-comparison td:last-child,
-.editions-comparison th:last-child {
-	border-right: 1px solid var(--inventory2);
-}
-
-.editions-comparison th {
-	background-color: var(--blue-ice);
-	color: white;
-}
-
-.editions-comparison th:nth-child(2) {
-	border-left: 1px solid var(--inventory2);
-}
-
-.editions-comparison td {
-	text-align: center;
-}
-
-.editions-comparison td:first-child {
-	text-align: left;
-	background-color: var(--inventory);
-}
-
-.editions-comparison tr:first-child th:first-child {
-	border: none;
-	background: transparent;
-}
-
-.editions-comparison .fa-solid {
-	color: var(--blue-ice);
-	font-size: 1.2em;
-}
-
-/* % FOOTER */
-
-footer {
-	background-image: url('../assets/textures/deepslate.png');
-	background-size: 128px;
-	color: white;
-	padding: 2rem;
-	margin-top: 7rem;
-}
-
-.footer__of-logo{
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-	margin-bottom: 1rem;
-}
-
-.footer__of-logo__img {
-	width: 2rem;
-}
-
-.footer__of-logo__name {
-	font-family: 'Minecraft', sans;
-	font-size: 1.5rem;
-}
-
-.footer__links__social-media,
-.footer__links__other-links {
-	display: flex;
-	margin-bottom: 1rem;
-	gap: 1rem;
-}
-
-.footer__copyright {
-	display: flex;
-	gap: 1rem;
-}
-
-.footer__copyright p {
-	font-size: 0.8rem;
-	margin-bottom: 0.5rem;
 }
