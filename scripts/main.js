@@ -13,7 +13,7 @@ const elementHero = document.querySelector('.hero')
 
 const now = new Date()
 
-if (now.getHours < 12) {
+if (now.getHours() < 12) {
     elementHero.style.backgroundImage = 'url("https://github.com/RenanSantos7/Optifine-Landing-Page/blob/main/assets/images/bg/swamp-river.jpg")'
 } else if (12 <= now.getHours() && now.getHours() < 18) {
     elementHero.style.backgroundImage = 'url("https://github.com/RenanSantos7/Optifine-Landing-Page/blob/main/assets/images/bg/sunset.jpg")'
