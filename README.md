@@ -21,3 +21,6 @@ This is a mockup of a landing page for Optifine Minecraft mod.
 - Preview versions hidden by default;
 - Features section pretend the in-game inventory;
 - Mod copyright on footer;
+
+## Deploy
+- [Github Pages](https://renansantos7.github.io/Optifine-Landing-Page/)
