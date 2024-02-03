@@ -6,7 +6,7 @@ This is a mockup of a landing page for Optifine Minecraft mod.
 
 ## Sections
 
-### Hero
+- Hero
 - Infos
 - Downloads
 - Features
